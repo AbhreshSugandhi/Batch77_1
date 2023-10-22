@@ -114,3 +114,25 @@ Steps for Reset
 17)	Run the hard reset command
 18)	Run the status – File is deleted
 19)	Now commit the changes of deletion of the file.
+
+Steps for revert command
+1)	 Make a new dir – revertgit
+2)	Add a new file – a.txt
+3)	Commit the change with a msg as m1
+4)	Add a new file – b.txt
+5)	Commit the change with a msg as m2
+6)	Add a new file – c.txt
+7)	Commit the change with a msg as m3
+8)	Run the log
+9)	Run the revert with commit id of 3rd commit
+10)	Your c.txt gets deleted and a new commit is created for reverting to the stage of 2nd commit completion.
+11)	Run the log
+12)	The repository is back to the state of 2nd commit
+
+Steps for revert command part2
+13)	To bring back the latest commit back to the repo
+14)	Run the log
+15)	Run the reset to commit 3
+16)	But the file is not back into the repo
+17)	Run the checkout c.txt
+18)	This will bring the file back to our repo.
