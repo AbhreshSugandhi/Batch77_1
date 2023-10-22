@@ -94,3 +94,23 @@ Steps for RM
 23)	Now the file is never going to be a part of the repo further. 
 24)	History of that file is over.
 
+Steps for Reset
+1)	Go to learngit repo
+2)	Add a new file reset.txt
+3)	Add a heading – “Welcome to Git and Github Course”
+4)	Check the status
+5)	Commit the changes
+6)	Modify reset.txt by adding second line – “Instructor-led Learning!”
+7)	Check the status
+8)	Commit the changes
+9)	Now you have two commits for the same file
+10)	Add another commit with line 3 – “By Abhresh”
+11)	Run the mixed reset command and go to 1st commit
+12)	Run the status – File should be in unstaged area
+13)	Move the file back to the committed stage by committing the file
+14)	Run the soft reset command
+15)	Run the status – File should be in staged area
+16)	Move the file back to the committed stage by committing the file
+17)	Run the hard reset command
+18)	Run the status – File is deleted
+19)	Now commit the changes of deletion of the file.
