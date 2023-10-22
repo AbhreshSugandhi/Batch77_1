@@ -1,0 +1,17 @@
+Steps for Clean
+1)	Go to learngit repo
+2)	Run the status
+3)	Add a new file
+4)	Run the status
+5)	File in the untracked area
+6)	Now run the command to remove the file
+7)	Run the status
+8)	File removed
+9)	Add a directory and a file inside the directory
+10)	Add a file outside the directory
+11)	Now run the clean command to remove the directory and files
+12)	Run the status file and directory is removed successfully
+13)	Add a directory and a file inside the directory
+14)	Add a file outside the directory
+15)	Now run the clean command to remove the directory and files along with ignored files
+16)	Run the status file and directory is removed successfully
