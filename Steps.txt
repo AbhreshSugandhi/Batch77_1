@@ -186,3 +186,55 @@ Steps with recursive merge without conflict
 9)	Git merge feature
 10)	Vim tool will open and it will ask you for a merge commit message
 11)	Once done run the log and now you can see the merge commit.
+
+Steps for Merge with conflict
+12)	Create a repo
+13)	Add readme.txt and commit it as “m1”
+14)	Modify the readme.txt and commit it as “m2”
+15)	Create a branch as “feature”
+16)	Checkout to feature branch
+17)	Add feature.txt and commit it as “f1”
+18)	Modify the feature.txt and commit it as “f2”
+19)	Now checkout main and edit the readme.txt and commit it as “m3”
+20)	Checkout to feature
+21)	Edit the readme.txt and make some changes and commit it as “f3”
+22)	Checkout to main
+23)	Git merge feature
+24)	Now you will see a conflict response
+25)	Now open the readme.txt file and you will see the conflict response
+26)	Edit the file with the finalized content
+27)	Go to git bash and run status and commit the change.
+
+Steps for Rebase
+1)	Let’s create a new project
+2)	Now let’s create a new file – abhi.txt
+3)	Git init
+4)	Git status
+5)	Git add
+6)	Git commit – m “main commit 1”
+7)	Now make some changes 
+8)	Git status
+9)	Git add
+10)	Git commit – m “main commit 2”
+11)	Create a new feature branch
+12)	Move to the new feature branch
+13)	Git log --oneline
+14)	Git checkout main
+15)	Git log --oneline
+16)	Both the branches are at same level of commits
+17)	Now create a new commit in main branch
+18)	Git commit -n “main commit 3”
+19)	Git log –oneline
+20)	Git checkout feature branch
+21)	Git log –oneline
+22)	Differences are there in both the branches
+23)	Add a new file into the feature branch
+24)	Commit two changes “feature commit 1” and “feature commit 2”
+25)	Git log –oneline
+26)	Git rebase main
+27)	Git log –oneline
+28)	Git checkout main
+29)	Git merge feature
+30)	Git log –oneline
+31)	Now the history will look like this
+
